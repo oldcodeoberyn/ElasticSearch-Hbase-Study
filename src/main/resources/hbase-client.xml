@@ -1,0 +1,28 @@
+<configuration>
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://dna-cluster/hbase</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>euca-10-254-68-9,euca-10-254-81-90,euca-10-254-82-179,euca-10-254-65-90,euca-10-254-71-25,euca-10-254-76-187,euca-10-254-73-33</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.clientPort</name>
+        <value>2181</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.dataDir</name>
+        <value>/opt/dna/data/zookeeper</value>
+    </property>
+    <!--
+      <property>
+        <name>zookeeper.znode.parent</name>
+        <value>/hbase-unsecure</value>
+      </property>
+    -->
+</configuration>
